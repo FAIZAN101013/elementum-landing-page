@@ -3,8 +3,9 @@
 
   position: relative;
   overflow: hidden;
-  height: min(1154px, 60.104vw);
+  height: min(1160px, 60.120vw);
   background: #ffffff;
+  margin-bottom: 140px;
 }
 
 .hero-stage {
@@ -13,7 +14,7 @@
   left: 0;
 
   width: 1920px;
-  height: 1154px;
+  height: 1160px;
 
   transform: scale(var(--hero-scale));
   transform-origin: top left;
@@ -192,6 +193,7 @@
 .person:nth-child(4) {
   left: 677px;
   top: 226px;
+  margin-top: -20px;
 }
 
 /* Center */

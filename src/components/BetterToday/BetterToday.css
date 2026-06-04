@@ -1,10 +1,10 @@
 .features {
   position: relative;
   width: 100%;
-  max-width: 1400px;
-  margin: 40px auto 0;
-  padding: 100px 60px;
-  overflow: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 160px 120px;
+  overflow: visible;
   background: #ffffff;
 }
 
@@ -12,14 +12,16 @@
 
 .red-glow {
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 166px;
+  height: 166px;
   left: 50%;
-  top: 20px;
+  top: 0;
   transform: translateX(-50%);
   background: #ff2020;
-  filter: blur(120px);
+  filter: blur(150px);
   z-index: 0;
+  opacity: 0.95;
+  pointer-events: none;
 }
 
 /* Wave */
@@ -28,10 +30,11 @@
   position: absolute;
   left: 50%;
   top: 260px;
-  width: 1100px;
+  width: min(1440px, 100%);
   transform: translateX(-50%);
   z-index: 0;
   pointer-events: none;
+  opacity: 0.95;
 }
 
 /* Rows */
@@ -41,14 +44,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 80px;
-  margin-bottom: 120px;
+  gap: 90px;
+  margin-bottom: 110px;
   z-index: 2;
 }
 
 .second-row {
   gap: 100px;
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 /* Content */
