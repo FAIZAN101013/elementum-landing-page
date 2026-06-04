@@ -71,11 +71,12 @@
 
 /* "changing" highlight */
 .pink {
-  background: #f1c2e6;
-  padding: 0 20px 6px;
-  border-radius: 999px;
-  display: inline-block;
-
+ position: relative;
+    background: #fcd9e8;
+    padding: 0 20px 6px;
+    border-radius: 999px;
+    display: inline-block;
+    
 }
 
 /* "status" highlight */

@@ -26,7 +26,7 @@ const Hero = () => {
         <h1 className="hero-title">
           The <span className="title-word">thinkers</span> and
           <br />
-          doers were <span className="pink">changing</span>
+          doers were ch<span className="pink">anging</span>
           <br />
           the <span className="green">status</span> Quo with
         </h1>
