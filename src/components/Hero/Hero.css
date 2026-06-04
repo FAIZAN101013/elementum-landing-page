@@ -2,10 +2,10 @@
   --hero-scale: min(1, calc(100vw / 1920px));
 
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   height: min(1160px, 60.120vw);
   background: #ffffff;
-  margin-bottom: 140px;
+  margin-bottom: 320px;
 }
 
 .hero-stage {

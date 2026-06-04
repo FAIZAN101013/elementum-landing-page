@@ -7,7 +7,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      
+      <div className="section-glow"></div>
       <BetterToday />
     </>
   );

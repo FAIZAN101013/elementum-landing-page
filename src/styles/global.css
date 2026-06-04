@@ -59,3 +59,20 @@ ul {
   width: min(1600px, calc(100% - 320px));
   margin: 0 auto;
 }
+
+.section-glow {
+  width: 166px;
+  height: 166px;
+
+  margin: -120px auto -120px;
+
+  background: #ff2020;
+
+  filter: blur(150px);
+
+  pointer-events: none;
+
+  position: relative;
+  z-index: 20;
+  
+}
