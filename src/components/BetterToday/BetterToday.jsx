@@ -10,6 +10,8 @@ const BetterToday = () => {
   return (
     <section className="features">
 
+      <div className="red-glow"></div>
+
       <img
         src={waveLine}
         alt=""
@@ -37,10 +39,9 @@ const BetterToday = () => {
           </h2>
 
           <p className="feature-description">
-            We are a team of strategists, designers
-            communicators, researchers. Together,
-            we believe that progress only happens
-            when you refuse to play things safe.
+            We are a team of strategists, designers communicators,
+            researchers. Together, we believe that progress only
+            happens when you refuse to play things safe.
           </p>
 
           <a href="/" className="read-more">
@@ -79,7 +80,7 @@ const BetterToday = () => {
 
         </div>
 
-        <div className="feature-content">
+        <div className="feature-content progress-content">
 
           <img
             src={underline}
@@ -97,11 +98,10 @@ const BetterToday = () => {
           </h2>
 
           <p className="feature-description">
-            We add a layer of fearless insights and
-            action that allows change makers to
-            accelerate their progress in areas such
-            as brand, design, digital, comms and
-            social research.
+            We add a layer of fearless insights and action that
+            allows change makers to accelerate their progress in
+            areas such as brand, design, digital, comms and social
+            research.
           </p>
 
           <a href="/" className="read-more">
