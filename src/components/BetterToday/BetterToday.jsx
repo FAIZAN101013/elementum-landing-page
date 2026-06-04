@@ -1,10 +1,10 @@
 import "./BetterToday.css";
 
 import betterTodayImg from "../../assets/images/better-today.png";
-import progressImg from "../../assets/images/progress.png";
+import progressImg from "../../assets/images/image 348.png";
 
 import underline from "../../assets/shapes/underline.svg";
-import waveLine from "../../assets/shapes/Vector2517.svg";
+import waveLine from "../../assets/shapes/Vector 2517.svg";
 
 const BetterToday = () => {
   return (
