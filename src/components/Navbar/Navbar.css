@@ -9,15 +9,16 @@
   justify-content: space-between;
 
   padding: 0 calc(160px * var(--nav-scale));
+
   background-color: #ffffff;
 }
 
 .logo {
   width: calc(201px * var(--nav-scale));
   height: calc(46px * var(--nav-scale));
+
   object-fit: contain;
 }
-
 
 .nav-links {
   width: calc(533px * var(--nav-scale));
@@ -32,7 +33,9 @@
   font-weight: 500;
   font-size: calc(18px * var(--nav-scale));
   line-height: calc(24px * var(--nav-scale));
+
   color: #000000;
+  text-decoration: none;
 
   transition: opacity 0.3s ease;
 }
@@ -42,17 +45,9 @@
 }
 
 .menu-icon {
-  width: calc(45px * var(--nav-scale));
+  width: calc(45.36px * var(--nav-scale));
   height: calc(10.5px * var(--nav-scale));
+
   object-fit: contain;
   cursor: pointer;
 }
-
-.nav-links a {
-  transition: opacity 0.3s ease;
-}
-
-.nav-links a:hover {
-  opacity: 0.7;
-}
-
