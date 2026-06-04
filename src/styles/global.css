@@ -1,8 +1,23 @@
 @font-face {
   font-family: "Satoshi";
+  src: url("../assets/fonts/Satoshi-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi";
   src: url("../assets/fonts/Satoshi-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
+}
+
+@font-face {
+  font-family: "Gerbil";
+  src: url("../assets/fonts/gerbil.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 * {
@@ -20,6 +35,10 @@ body {
   background-color: #ffffff;
   color: #000000;
   overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
 }
 
 img {

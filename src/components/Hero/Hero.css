@@ -1,0 +1,221 @@
+.hero {
+  --hero-scale: min(1, calc(100vw / 1920px));
+
+  position: relative;
+  overflow: hidden;
+  height: min(1154px, 60.104vw);
+  background: #ffffff;
+}
+
+.hero-stage {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 1920px;
+  height: 1154px;
+
+  transform: scale(var(--hero-scale));
+  transform-origin: top left;
+}
+
+/* ==========================
+   HERO TITLE
+========================== */
+
+.hero-title {
+  position: absolute;
+  top: 143px;
+  left: 160px;
+
+  width: 1600px;
+  height: 378px;
+
+  margin: 0;
+  z-index: 2;
+
+  font-family: "Gerbil", sans-serif;
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 126px;
+  text-align: center;
+  color: #000000;
+}
+
+/* ==========================
+   TITLE WORD HIGHLIGHT + UNDERLINE
+========================== */
+
+/* "thinkers" — plain text with SVG underline drawn beneath via .title-underline */
+.title-word {
+  position: relative;
+  display: inline-block;
+}
+
+/* The SVG underline sits directly below "thinkers" */
+.title-underline {
+  position: absolute;
+
+  /* Align to the bottom of the first line inside .hero-title */
+  /* top of title = 143px, first line-height = 126px, underline sits ~14px below baseline */
+  top: 253px;   /* 143 + 126 - (56/2) ≈ 241, nudge to 253 to match Figma */
+  left: 660px;  /* roughly where "thinkers" starts within the centered 1600px block */
+
+  width: 594px; /* width of "thinkers" word */
+  height: 50px; /* height of the underline */
+
+  z-index: 3;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* "changing" highlight */
+.pink {
+  background: #f1c2e6;
+  padding: 0 20px 6px;
+  border-radius: 999px;
+  display: inline-block;
+
+}
+
+/* "status" highlight */
+.green {
+  background: #dceadf;
+  padding: 0 20px 6px;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+/* ==========================
+   DESCRIPTION
+========================== */
+
+.hero-description {
+  position: absolute;
+  top: 548px;
+  left: 545px;
+
+  width: 831px;
+  height: 72px;
+
+  margin: 0;
+  z-index: 1;
+
+  font-family: "Satoshi", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  color: #000000;
+}
+
+/* ==========================
+   DECORATIVE SHAPES
+========================== */
+
+.shape-left,
+.shape-right {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Both left shapes share the same anchor point */
+.shape-left {
+  left: 0;
+  top: 502px;
+}
+
+.shape-left-red {
+  transform: translateX(-8px);
+}
+
+.shape-left-black {
+  transform: translateX(28px);
+}
+
+.shape-right {
+  left: 1605px;
+  top: 315px;
+  width: 117px;
+  height: 146px;
+  z-index: 1;
+}
+
+/* ==========================
+   PEOPLE
+========================== */
+
+.people-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 715px;
+
+  height: 453px;
+  z-index: 2;
+}
+
+.person {
+  position: absolute;
+
+  width: 226px;
+  height: 226px;
+
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Left Large */
+.person:nth-child(1) {
+  left: 38px;
+  top: 195px;
+}
+
+/* Left Overlapping */
+.person:nth-child(2) {
+  left: 199px;
+  top: 139px;
+
+  border: 8px solid #ffffff;
+  z-index: 3;
+}
+
+/* Upper Center Left */
+.person:nth-child(3) {
+  left: 553px;
+  top: 0;
+}
+
+/* Lower Center Left */
+.person:nth-child(4) {
+  left: 677px;
+  top: 226px;
+}
+
+/* Center */
+.person:nth-child(5) {
+  left: 977px;
+  top: 55px;
+}
+
+/* Overlapping Center */
+.person:nth-child(6) {
+  left: 1144px;
+  top: 139px;
+
+  border: 8px solid #ffffff;
+  z-index: 3;
+}
+
+/* Upper Right */
+.person:nth-child(7) {
+  left: 1414px;
+  top: 0;
+}
+
+/* Right Large */
+.person:nth-child(8) {
+  left: 1656px;
+  top: 159px;
+}
