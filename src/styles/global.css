@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Satoshi";
+  src: url("../assets/fonts/Satoshi-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +16,10 @@ html {
 }
 
 body {
-  font-family: sans-serif;
-  background: #f6f6f6;
-  color: #000;
+  font-family: "Satoshi", sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  overflow-x: hidden;
 }
 
 img {
@@ -29,6 +37,6 @@ ul {
 }
 
 .container {
-  width: min(1200px, 90%);
+  width: min(1600px, calc(100% - 320px));
   margin: 0 auto;
 }

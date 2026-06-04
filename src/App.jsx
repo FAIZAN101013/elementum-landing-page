@@ -1,7 +1,11 @@
+import Navbar from "./components/Navbar/Navbar";
+
+
 function App() {
   return (
     <>
-      <h1>Elementum Landing Page</h1>
+      <Navbar />
+    
     </>
   );
 }
