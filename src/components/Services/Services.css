@@ -1,0 +1,152 @@
+.services {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+
+  padding: 120px 100px 0;
+
+  position: relative;
+  background: #ffffff;
+}
+
+/* ==========================
+   HEADING
+========================== */
+
+.services-heading {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+
+  margin-bottom: 60px;
+}
+
+.services-heading h2 {
+  margin: 0;
+
+  font-family: "Gerbil", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 72px;
+
+  color: #000;
+}
+
+.services-highlight {
+  background: #d7eedd;
+  border-radius: 100px;
+  padding: 0 14px;
+}
+
+.services-underline {
+  position: absolute;
+
+  width: 180px;
+
+  left: 0;
+  top: 98px;
+
+  pointer-events: none;
+}
+
+/* ==========================
+   SERVICES LIST
+========================== */
+
+.services-list {
+  width: 100%;
+}
+
+.service-row {
+  display: grid;
+  grid-template-columns: 240px 1fr 80px;
+
+  align-items: center;
+
+  min-height: 90px;
+
+  border-top: 1px solid #d8d8d8;
+
+  padding: 12px 0;
+}
+
+.service-row:last-child {
+  border-bottom: 1px solid #d8d8d8;
+}
+
+/* ==========================
+   LEFT TEXT
+========================== */
+
+.service-small {
+  font-family: "Satoshi", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+
+  color: #000;
+}
+
+/* ==========================
+   CENTER TITLE
+========================== */
+
+.service-title {
+  font-family: "Gerbil", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 42px;
+
+  color: #000;
+}
+
+/* ==========================
+   RIGHT ARROW
+========================== */
+
+.service-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  font-size: 22px;
+  color: #000;
+}
+
+.service-arrow::before {
+  content: "";
+
+  width: 40px;
+  height: 1px;
+
+  background: #000;
+
+  margin-right: 8px;
+}
+
+/* ==========================
+   LAST ROW IMAGE
+========================== */
+
+.service-title-with-image {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.service-circle {
+  width: 70px;
+  height: 70px;
+
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ==========================
+   RESPONSIVE SAFETY
+========================== */
+
+img {
+  max-width: 100%;
+  display: block;
+}
