@@ -1,0 +1,165 @@
+.features {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 170px 160px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.feature-wave {
+  position: absolute;
+  left: 50%;
+  top: 420px;
+  width: min(1440px, 100%);
+  transform: translateX(-50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.feature-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  margin-bottom: 170px;
+  z-index: 2;
+}
+
+.feature-content {
+  position: relative;
+  width: 737px;
+  z-index: 2;
+}
+
+.feature-title {
+  font-family: "Gerbil", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 76px;
+  color: #000;
+}
+
+.feature-description {
+  width: 715px;
+
+  margin-top: 30px;
+
+  font-family: "Satoshi", sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000;
+}
+
+.today-highlight {
+  background: #d7eedd;
+  border-radius: 100px;
+  padding: 0 12px;
+}
+
+.better-title-underline {
+  position: absolute;
+
+  width: 371px;
+
+  left: 0;
+  top: 18px;
+}
+
+.progress-underline {
+  left: 200px;
+  top: 95px;
+}
+
+.read-more {
+  display: inline-flex;
+  align-items: center;
+
+  margin-top: 40px;
+
+  font-family: "Satoshi", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+}
+
+.read-more::after {
+  content: "";
+
+  width: 144px;
+  height: 1px;
+
+  background: #000;
+
+  margin-left: 15px;
+}
+
+.feature-image-wrapper {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.feature-image {
+  width: 600px;
+  height: 600px;
+
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.red-square {
+  position: absolute;
+
+  width: 170px;
+  height: 170px;
+
+  top: 30px;
+  right: -20px;
+
+  background: #ff7171;
+
+  transform: rotate(12deg);
+
+  z-index: -1;
+}
+
+.second-row {
+  margin-top: 120px;
+}
+
+.triangle-top {
+  position: absolute;
+
+  width: 0;
+  height: 0;
+
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 120px solid #ff7171;
+
+  top: -40px;
+  left: -20px;
+
+  z-index: -1;
+}
+
+.triangle-bottom {
+  position: absolute;
+
+  width: 0;
+  height: 0;
+
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-top: 120px solid #ff7171;
+
+  bottom: -20px;
+  left: 180px;
+
+  z-index: -1;
+}
