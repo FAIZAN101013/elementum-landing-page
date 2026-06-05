@@ -160,10 +160,11 @@
 .feature-image-wrapper {
   position: relative;
 
-  width: 420px;
-  height: 420px;
+  width: 500px;
+  height: 500px;
 
   flex-shrink: 0;
+  overflow: visible;
 }
 
 .feature-row:first-child .feature-image-wrapper {
@@ -171,8 +172,8 @@
 }
 
 .feature-image {
-  width: 420px;
-  height: 420px;
+  width: 500px;
+  height: 500px;
 
   border-radius: 50%;
   object-fit: cover;
@@ -192,7 +193,7 @@
   height: 130px;
 
   top: 20px;
-  right: -25px;
+  right: -8px;
 
   background: #ff7171;
 
@@ -224,14 +225,13 @@
 .triangle-bottom {
   position: absolute;
 
-  width: 0;
-  height: 0;
-
+  width: 180px;
+  height: 120px;
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
   border-top: 110px solid #ff7171;
 
-left: 240px;
+left: 330px;
   bottom: -30px;
   transform: rotate(60deg);
 
