@@ -135,27 +135,22 @@
 
 .read-more {
   display: flex;
-  align-items: center; /* vertical center */
+  align-items: center;
+  gap: 12px;
+
+  margin-top: 40px;
 
   font-family: "Satoshi", sans-serif;
   font-size: 20px;
   font-weight: 500;
   color: #000;
   text-decoration: none;
-
-  margin-top: 40px;
 }
 
-.read-more::after {
-  content: "⟶";
-
-  margin-left: 12px;
-
-  display: flex;
-  align-items: center;
-
-  font-size: 28px;  
-  line-height: 1;
+.read-more-arrow {
+  width: 120px; /* adjust to your SVG */
+  height: auto;
+  display: block;
 }
 
 /* ==========================
