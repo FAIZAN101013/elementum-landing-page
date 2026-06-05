@@ -14,13 +14,12 @@
 /* ==========================
    RED WAVE
 ========================== */
-
 .services-wave {
   position: absolute;
 
   bottom: 330px;
+  right: -420px;
 
-  left: 780px;
   width: 1000px;
 
   z-index: 0;

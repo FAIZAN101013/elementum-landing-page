@@ -43,8 +43,9 @@ const services = [
 
 const Services = () => {
   return (
+     
     <section className="services">
-
+<div className="services-container">
       <img
         src={waveLine}
         alt=""
@@ -76,8 +77,9 @@ const Services = () => {
         ))}
 
       </div>
-
+</div>
     </section>
+    
   );
 };
 
