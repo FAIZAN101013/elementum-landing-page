@@ -1,0 +1,80 @@
+.newsletter {
+   position: relative;
+
+  width: 100%;
+  padding: 90px 60px 80px;
+
+  background: #d7eedd;
+  overflow: hidden;
+}
+
+.newsletter-content {
+  width: 904px;
+  margin: 0 auto;
+  text-align: center;
+
+  position: relative;
+  z-index: 3;
+}
+
+.newsletter-title {
+  margin: 0;
+
+  font-family: "Gerbil", sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 78px;
+
+  color: #000;
+}
+
+.newsletter-description {
+  margin-top: 20px;
+
+  font-family: "Satoshi", sans-serif;
+  font-size: 18px;
+  color: #000;
+}
+
+.newsletter-btn {
+  margin-top: 30px;
+
+  border: none;
+  border-radius: 999px;
+
+  background: #000;
+  color: #fff;
+
+  padding: 18px 40px;
+
+  cursor: pointer;
+
+  font-family: "Satoshi", sans-serif;
+}
+
+.newsletter-wave {
+  position: absolute;
+  width:125px;
+  z-index: 2;
+}
+
+.wave-1 {
+  left: 36%;
+  top: 2px;
+}
+
+.wave-2 {
+  left: 40%;
+  top: 2px;
+}
+
+.newsletter-shape {
+  position: absolute;
+
+  right: 100px;
+  top:200px;
+
+  width: 120px;
+
+  z-index: 1;
+}
