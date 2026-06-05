@@ -24,7 +24,7 @@
    HERO TITLE
 ========================== */
 
-.hero-title {
+.hero-title-wrapper {
   position: absolute;
   top: 143px;
   left: 160px;
@@ -32,8 +32,16 @@
   width: 1600px;
   height: 378px;
 
-  margin: 0;
   z-index: 2;
+}
+
+.hero-title {
+  position: static;
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
 
   font-family: "Gerbil", sans-serif;
   font-size: 100px;
@@ -54,16 +62,14 @@
 }
 
 /* The SVG underline sits directly below "thinkers" */
-.title-underline {
+.hero-title-wrapper .title-underline {
   position: absolute;
 
-  /* Align to the bottom of the first line inside .hero-title */
-  /* top of title = 143px, first line-height = 126px, underline sits ~14px below baseline */
-  top: 253px;   /* 143 + 126 - (56/2) ≈ 241, nudge to 253 to match Figma */
-  left: 660px;  /* roughly where "thinkers" starts within the centered 1600px block */
+  top: 110px;
+  left: 500px;
 
-  width: 594px; /* width of "thinkers" word */
-  height: 50px; /* height of the underline */
+  width: 594px;
+  height: 50px;
 
   z-index: 3;
   pointer-events: none;

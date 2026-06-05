@@ -4,6 +4,7 @@ import underline from "../../assets/shapes/underline.svg";
 import waveLine from "../../assets/shapes/Vector 2517.svg";
 import circleImage from "../../assets/service-circle.png";
 
+import SectionTitle from "../SectionTitle/SectionTitle";
 import ServiceItem from "./ServiceItem";
 
 const services = [
@@ -50,24 +51,20 @@ const Services = () => {
         className="services-wave"
       />
 
-      <div className="services-heading">
-
-        <img
-          src={underline}
-          alt=""
-          className="services-underline"
-        />
-
-        <h2>
-          What we{" "}
-          <span className="services-highlight">
-            can
-          </span>
-          <br />
-          offer you!
-        </h2>
-
-      </div>
+      <SectionTitle
+        as="h2"
+        wrapperClassName="services-heading"
+        className="services-title"
+        underline={underline}
+        underlineClass="services-underline"
+      >
+        What we{" "}
+        <span className="services-highlight">
+          can
+        </span>
+        <br />
+        offer you!
+      </SectionTitle>
 
       <div className="services-list">
 

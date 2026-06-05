@@ -1,0 +1,17 @@
+.section-title-wrapper {
+  position: relative;
+}
+
+.section-title {
+  margin: 0;
+
+  font-family: "Gerbil", sans-serif;
+  font-weight: 400;
+
+  color: #000;
+}
+
+.section-title-underline {
+  position: absolute;
+  pointer-events: none;
+}

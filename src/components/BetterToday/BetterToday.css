@@ -216,27 +216,29 @@
   border-right: 60px solid transparent;
   border-bottom: 110px solid #ff7171;
 
-  left: -20px   ;
-  top: 0px;
+  left: -20px;
+  top: 50px;
+  transform: rotate(0deg);
 
   z-index: 1;
+  pointer-events: none;
 }
 
 .triangle-bottom {
   position: absolute;
 
-  width: 180px;
-  height: 120px;
+  width: 0;
+  height: 0;
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
   border-top: 110px solid #ff7171;
 
-left: 330px;
-  bottom: -30px;
-  transform: rotate(60deg);
-
+  left: 320px;
+  bottom: -24px;
+  transform: rotate(58deg);
 
   z-index: 4;
+  pointer-events: none;
 }
 
 /* ==========================

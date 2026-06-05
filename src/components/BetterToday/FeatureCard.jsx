@@ -1,6 +1,8 @@
 import underline from "../../assets/shapes/underline.svg";
 import ArrowReadmore from "../../assets/icons/ArrowReadmore.svg";
 
+import SectionTitle from "../SectionTitle/SectionTitle";
+
 const FeatureCard = ({
   title,
   description,
@@ -14,15 +16,14 @@ const FeatureCard = ({
     <div className={`feature-row ${reverse ? "second-row" : ""}`}>
       {!reverse && (
         <div className={`feature-content ${contentClass}`}>
-          <img
-            src={underline}
-            alt=""
-            className={`better-title-underline ${underlineClass}`}
-          />
-
-          <h2 className="feature-title">
+          <SectionTitle
+            as="h2"
+            underline={underline}
+            underlineClass={`better-title-underline ${underlineClass}`.trim()}
+            className="feature-title"
+          >
             {title}
-          </h2>
+          </SectionTitle>
 
           <p className="feature-description">
             {description}
@@ -52,15 +53,14 @@ const FeatureCard = ({
 
       {reverse && (
         <div className={`feature-content ${contentClass}`}>
-          <img
-            src={underline}
-            alt=""
-            className={`better-title-underline ${underlineClass}`}
-          />
-
-          <h2 className="feature-title">
+          <SectionTitle
+            as="h2"
+            underline={underline}
+            underlineClass={`better-title-underline ${underlineClass}`.trim()}
+            className="feature-title"
+          >
             {title}
-          </h2>
+          </SectionTitle>
 
           <p className="feature-description">
             {description}
