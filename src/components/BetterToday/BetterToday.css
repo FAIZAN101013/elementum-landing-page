@@ -221,3 +221,59 @@ img {
   display: block;
   max-width: 100%;
 }
+
+@media (max-width: 1024px) {
+  .feature-row,
+  .second-row {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .second-row {
+    margin-top: 0;
+  }
+
+  .feature-content,
+  .progress-content,
+  .feature-description {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+  }
+
+  .feature-image-wrapper,
+  .feature-image {
+    width: 420px;
+    height: 420px;
+  }
+
+  .second-row .feature-image-wrapper {
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .feature-title {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .feature-description {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .feature-image-wrapper,
+  .feature-image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .feature-wave,
+  .red-square,
+  .triangle-top,
+  .triangle-bottom,
+  .better-title-underline,
+  .progress-underline {
+    display: none;
+  }
+}
